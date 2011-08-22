@@ -2,6 +2,11 @@
 function smarty_function_mtgetname( $args, &$ctx ) {
     $app = $ctx->stash( 'bootstrapper' );
     $model = $args[ 'model' ];
+    if ( $model == 'author' ) {
+        return '';
+    } elseif ( $model == 'config' ) {
+        return '';
+    }
     $id = $args[ 'id' ];
     if (! $id ) return '';
     $terms = $id;
