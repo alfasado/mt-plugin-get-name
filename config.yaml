@@ -1,0 +1,12 @@
+name: GetName
+id: GetName
+key: getname
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+l10n_class: GetName::L10N
+description: <__trans phrase="Get object name or label or title form id.">
+tags:
+    block:
+    function:
+        GetName: $getname::GetName::Tags::_hdlr_get_name
