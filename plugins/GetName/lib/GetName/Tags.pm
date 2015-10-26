@@ -4,7 +4,7 @@ use strict;
 
 sub _hdlr_get_name {
     my ( $ctx, $args, $cond ) = @_;
-    my $model = $args->{ model };
+    my $model = lc( $args->{ model } );
     my $id = $args->{ id };
     return '' unless $id;
     return '' if ( $model eq 'author' );
